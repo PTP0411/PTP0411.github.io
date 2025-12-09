@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Philip Pham</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Go Bullets!</h1>
+    </header>
+    <div class="container">
+        <img class="profile-image" src="pictures/my_pic.jpg" alt="Philip 2023">
+        <section>
+            <h2>About Me</h2>
+            <p>
+                <strong>Name:</strong> Phong Thuan Pham<br>
+                <strong>College:</strong> <a href="https://www.gettysburg.edu" target="_blank">Gettysburg
+                    College</a>,
+                    <a href="https://www.uow.edu.au" target="_blank">Wollongong University</a><br>
+                <strong>Class:</strong> 2025<br>
+                <strong>Major:</strong> <a href='https://www.gettysburg.edu/academic-programs/computer-science/'
+                    target="_blank">Computer Science</a><br>
+                <strong>Minor:</strong> <a href='https://www.gettysburg.edu/academic-programs/economics/'
+                    target="_blank">Economics</a>,
+                <a href='https://www.gettysburg.edu/academic-programs/interdisciplinary-studies/programs/data-science/'
+                    target="_blank">Data Science</a>
+
+            </p>
+        </section>
+        <section>
+            <h2>Research</h2>
+            <ul>
+                <!-- <li><a href="http://www.cs.gettysburg.edu/~phamph01/xsig/" target="_blank">X-SIG 2023</a></li> -->
+                <!--<li><a href="https://drive.google.com/file/d/18tKApFaUQWo4rAiRj0XrYPjYi4JUN9dr/view?usp=sharing" target="_blank">Great Rolled Ones</a></li>-->
+                <li><a href="http://www.cs.gettysburg.edu/~phamph01/research/gro" target="_blank">Great Rolled Ones</a>
+                </li>
+                <li><a href="http://www.cs.gettysburg.edu/~phamph01/research/fairkalah" target="_blank">In Progress: FairKalah with no null capture.</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="courses-heading">Coursework
+                <!-- Add the "Show/Hide Courses" button -->
+                <button id="toggle-courses" class="down-arrow"></button>
+            </h2>
+            <!-- Add the courses list container -->
+            <div id="courses-container" style="display: none;">
+                <h3>Gettysburg College</h3>
+                <h4>Computer Science</h4>
+                <ul>
+                    <li>CS111: Introduction to Computer Science I</li>
+                    <li>CS112: Introduction to Computer Science II</li>
+                    <li>CS201: The Mathematics of Computation</li>
+                    <li>CS216: Data Structure and Algorithm</li>
+                    <li>CS221: Computer Organization and Assembly Language Programming</li>
+                    <li>CS301: The Theory of Computation</li>
+                    <li>CS324: Principle of Operating Systems</li>
+                    <li>CS360: Principle of Database Systems</li>
+                    <li>CS371: Introduction to Artificial Intelligence</li>
+                    <li>CS440: Advanced Systems Designs</li>
+                    <li>CS463: Individualized-Study Research</li>
+                    <li>DS220: Cultural Analytics</li>
+                    <li>DS256: Data Science Programming</li>
+                    <li>DS325: Applied Data Science</li>
+                </ul>
+                <h4>Economics</h4>
+                <ul>
+                    <li>ECON103: Principle of Microeconomics</li>
+                    <li>ECON104: Principle of Macroeconomics</li>
+                    <li>ECON241: Introductory Economics and Business Statistics</li>
+                    <li>ECON243: Intermediate Macroeconomics Theory</li>
+                    <li>ECON245: Intermediate Microeconomics Theory</li>
+                    <li>ECON267: Finance</li>
+                </ul>
+                </ul>
+                <h3>Wollongong University</h3>
+                <ul>
+                    <li>CSCI369: Ethical Hacking</li>
+                    <li>CSCI336: Interactive Computer Graphics</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Fun stuff</h2>
+        
+            <ul>
+                <li><a href="http://www.cs.gettysburg.edu/~phamph01/trafficlights/web/#/">Traffic lights</a></li>
+           <!-- <li><a href="http://www.cs.gettysburg.edu/~phamph01/cs360/hw4/quizMaker.php">Spanish quiz</a></li> -->
+                <li><a href="http://www.cs.gettysburg.edu/~phamph01/cs360/proj/home.php">Meal website</a></li>
+                <li><a href="http://www.cs.gettysburg.edu/~phamph01/flowers/flower.html">Flowers</a></li>
+
+            </ul>
+        </section>
+        <section id="contact-leave-container">
+            <div id="leave-message"> 
+
+                <h2>Leave me a message</h2>
+                <form id="contact-form" action="submit.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send!</button>
+                </form>
+            </div>
+            <div id="contact-info">
+                <h2>Contact info</h2>
+                <p>
+                    Email: phamph01@gettysburg.edu
+                </p>
+                <p>Connect with me on social media:</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/phongpham01">LinkedIn</a></li>
+                    <li><a href="https://github.com/PTP0411">Github</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!-- JavaScript code to toggle the courses section -->
+    <script>
+        var toggleButton = document.getElementById("toggle-courses");
+        var coursesContainer = document.getElementById("courses-container");
+
+        toggleButton.addEventListener("click", function () {
+            if (coursesContainer.style.display === "none") {
+                coursesContainer.style.display = "block";
+                toggleButton.classList.remove("down-arrow");
+                toggleButton.classList.add("up-arrow");
+            } else {
+                coursesContainer.style.display = "none";
+                toggleButton.classList.remove("up-arrow");
+                toggleButton.classList.add("down-arrow");
+            }
+        });
+    </script>
+</body>
+
+</html>

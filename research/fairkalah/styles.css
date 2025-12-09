@@ -1,0 +1,123 @@
+/* === CLASSICAL TABLETOP THEME === */
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:
+    linear-gradient(180deg, #f2eee6, #e6dfd3),
+    url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  color: #2f2a23;
+  font-family: Inter, system-ui, sans-serif;
+  line-height: 1.7;
+}
+
+/* === HEADER === */
+
+.site-header {
+  text-align: center;
+  padding: 3.5rem 1rem 3rem;
+  background:
+    linear-gradient(180deg, rgba(90,70,40,0.08), transparent 70%);
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+.site-header h1 {
+  font-family: "Crimson Pro", serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #3a2f1f;
+  letter-spacing: 0.05em;
+}
+
+.subtitle {
+  margin-top: 0.7rem;
+  font-size: 1.05rem;
+  color: #5c5244;
+}
+
+/* === LAYOUT === */
+
+.content {
+  max-width: 1350px;
+  margin: 3rem auto;
+  padding: 0 1.25rem;
+}
+
+/* === ARCHIVE CARDS === */
+
+.card {
+  background:
+    linear-gradient(180deg, #fbfaf7, #f5f2eb);
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 10px;
+  padding: 2.2rem;
+  margin-bottom: 2.5rem;
+  box-shadow:
+    0 8px 28px rgba(0,0,0,0.12);
+}
+
+.card h2 {
+  font-family: "Crimson Pro", serif;
+  font-size: 1.5rem;
+  color: #3b2e1c;
+  margin-bottom: 1rem;
+}
+
+.card p,
+.card li {
+  color: #2f2a23;
+}
+
+/* === SOFT HIGHLIGHT === */
+
+.highlight {
+  border-left: 5px solid #8b6a3e;
+  background:
+    linear-gradient(180deg, #f3ede3, #f9f6f1);
+}
+
+/* === LINKS === */
+
+a {
+  color: #7a5a2a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === DATA LINK BUTTON === */
+
+.data-link {
+  display: inline-block;
+  margin-top: 1.1rem;
+  padding: 0.7rem 1.4rem;
+  background: linear-gradient(180deg, #8b6a3e, #6f5430);
+  color: #fdfaf4;
+  border-radius: 8px;
+  letter-spacing: 0.04em;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  transition: transform 0.1s ease;
+}
+
+.data-link:hover {
+  transform: translateY(-2px);
+}
+
+/* === FOOTER === */
+
+.site-footer {
+  text-align: center;
+  padding: 2.8rem 1rem;
+  font-size: 0.9rem;
+  color: #6b5e4b;
+  border-top: 1px solid rgba(0,0,0,0.15);
+}
