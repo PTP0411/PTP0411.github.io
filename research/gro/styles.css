@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Crimson+Text:wght@400;600;700&display=swap");
+
+:root {
+  --ink: #2b1b10;
+  --ink-muted: #5a4635;
+  --parchment: #f4ead3;
+  --parchment-dark: #efe0c0;
+  --frame: #6a4a2e;
+  --brass: #b08d57;
+  --shadow: 0 12px 40px rgba(0,0,0,0.35);
+  --radius: 18px;
+}
+
+/* RESET BAD TEMPLATE RULES */
+* {
+  box-sizing: border-box;
+  background: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: "Crimson Text", Georgia, serif;
+  color: var(--ink);
+
+  background:
+    radial-gradient(1200px 700px at 50% 20%, rgba(255,255,255,0.08), transparent 60%),
+    linear-gradient(180deg, #1c2b26, #0e1915);
+}
+
+/* LINKS */
+a {
+  color: #245f8a;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(36,95,138,0.4);
+}
+a:hover {
+  border-bottom-style: solid;
+}
+
+/* HEADER */
+.site-header {
+  padding: 40px 16px 12px;
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 26px 24px;
+
+  background: linear-gradient(180deg, var(--parchment), var(--parchment-dark));
+  border: 2px solid var(--frame);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.badge-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-family: "IM Fell English", serif;
+  padding: 6px 10px;
+  border: 1px solid var(--frame);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.4);
+  color: var(--ink-muted);
+}
+
+/* TITLES */
+h1, h2, h3 {
+  font-family: "IM Fell English", serif;
+  color: var(--ink);
+}
+
+.title {
+    color: white;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: clamp(2.2rem, 3vw, 3.2rem);
+}
+
+.subtitle {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.fineprint {
+  color: white;
+  font-style: italic;
+}
+
+/* CONTENT */
+.content {
+  max-width: 1000px;
+  margin: 12px auto 80px;
+  padding: 0 16px;
+  display: grid;
+  gap: 14px;
+}
+
+/* CARDS */
+.card {
+  padding: 20px;
+  background: linear-gradient(180deg, var(--parchment), var(--parchment-dark));
+  border: 2px solid var(--frame);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p,
+.card li {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.highlight {
+  border-color: var(--brass);
+}
+
+/* BLOCKQUOTE */
+blockquote {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-left: 4px solid var(--brass);
+  background: rgba(255,255,255,0.4);
+  border-radius: 12px;
+  font-style: italic;
+}
+
+/* BUTTONS */
+.cta-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.btn {
+  font-family: "IM Fell English", serif;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 2px solid var(--frame);
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.25));
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+.btn:hover {
+  filter: brightness(1.05);
+}
+.btn-primary {
+  border-color: var(--brass);
+  background: linear-gradient(180deg, #e6c792, #cfa866);
+}
+
+/* MINI CARDS */
+.mini-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 700px) {
+  .mini-cards { grid-template-columns: 1fr; }
+}
+.mini {
+  border: 1px solid var(--frame);
+  border-radius: 12px;
+  padding: 10px;
+  background: rgba(255,255,255,0.35);
+}
+
+/* DEMO / PANELS */
+.demo-panel {
+  border: 2px solid var(--frame);
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.35);
+  padding: 14px;
+}
+
+.big-roll {
+  margin-bottom: 1rem; 
+}
+
+.demo-actions {
+  margin-bottom: 1rem;
+}
+
+/* INPUTS */
+input {
+  font-family: "Crimson Text", serif;
+  font-size: 1rem;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 2px solid var(--frame);
+  background: rgba(255,255,255,0.7);
+  color: var(--ink);
+}
+input:focus {
+  outline: none;
+  border-color: var(--brass);
+}
+
+/* HISTORY DICE */
+.history-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.die {
+  border: 1px solid var(--frame);
+  background: rgba(255,255,255,0.45);
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-family: "IM Fell English", serif;
+}
+
+/* BIG ROLL */
+.big-roll {
+  border: 2px solid var(--frame);
+  border-radius: 14px;
+  padding: 12px;
+  background: rgba(255,255,255,0.45);
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  color: var(--parchment);
+}
+
+.site-header {
+  max-width: 1200px;
+  margin: 20px auto 10px;
+  padding: 0 16px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header-art {
+  width: 300px;        /* adjust size */
+  max-width: 35%;
+  border-radius: 14px;
+  border: 2px solid var(--frame);
+  background: rgba(255,255,255,0.4);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+/* mobile layout */
+@media (max-width: 700px) {
+  .site-header {
+    flex-direction: column;
+  }
+
+  .header-art {
+    max-width: 100%;
+  }
+}
+
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+}
+
+.overlay.hidden { display: none; }
+
+.overlay-card{
+  width: min(520px, 92vw);
+  border-radius: 18px;
+  padding: 1.2rem;
+  background: rgba(20,20,20,0.95);
+  border: 1px solid rgba(255,255,255,0.15);
+  text-align: center;
+}
+
+.cthulhu{
+  width: min(320px, 70vw);
+  height: auto;
+  display: block;
+  margin: 0 auto 0.75rem;
+}

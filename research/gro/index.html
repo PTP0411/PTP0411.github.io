@@ -1,26 +1,216 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GRO</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-        iframe {
-            border: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-</head>
-<body>
-    <embed src="paper.pdf" width="100%" height="2100px" />
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Great Rolled Ones</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/research1.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Optimal play + strategy visualizations for the Great Rolled Ones jeopardy dice game."
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-text">
+        <h1 class="title">
+          Great Rolled Ones — Optimal Play & Human-Friendly Strategies
+        </h1>
+
+        <p class="subtitle">
+          Paper with Prof. Todd Neller, Quan Nguyen, Linh Phan, and Prof.
+          Clifton Presser.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#try">Try the dice</a>
+          <a class="btn" href="#results">Key results</a>
+          <a class="btn" href="#paper">Paper</a>
+        </div>
+
+        <p class="fineprint">
+          *No actual summoning performed. Only rigorous computation.
+        </p>
+      </div>
+      <img src="../../assets/research1.jpg" alt="Great Rolled Ones artwork" class="header-art" />
+    </header>
+
+    <main class="content">
+      <!-- Overview / story -->
+      <section class="card" id="overview">
+        <h2>Overview</h2>
+        <p>
+          Back in 2020, while everything was locked down, there were ritualists
+          who tried to summon Cthulhu… but what they didn’t expect was the
+          consequence of making the wrong move.
+        </p>
+        <p>
+          Worry not: our team excavated the secret manuals for summoning
+          success. The catch? They look a lot like optimal decision policies for
+          a jeopardy dice game.
+        </p>
+
+        <blockquote>
+          “In Great Rolled Ones, greed is a strategy — until it’s a mistake.” -
+          Me, probably, on some random night.
+        </blockquote>
+      </section>
+
+      <!-- Research credit -->
+      <section class="card highlight" id="affiliation">
+        <h2>Research Supervision & Affiliation</h2>
+        <p>
+          Conducted under the supervision of
+          <a
+            href="https://cs.gettysburg.edu/~tneller"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Prof. Todd W. Neller
+          </a>
+          (Gettysburg College).
+        </p>
+      </section>
+
+      <!-- Key results -->
+      <section class="card" id="results">
+        <h2>Key Results</h2>
+        <div class="pill-row">
+          <span class="pill">Second-player advantage observed</span>
+          <span class="pill">Fairness via komi ≈ <strong>3</strong></span>
+          <span class="pill">Strategy spectrum (simple but strong)</span>
+        </div>
+
+        <div class="mini-cards">
+          <div class="mini">
+            <h3>Ritual solved!</h3>
+            <p>
+              We have computed the optimal move for every possible states of the
+              game. So you can successfully summon Chtulu!
+            </p>
+          </div>
+          <div class="mini">
+            <h3>Fairness</h3>
+            <p>
+              We estimate fairness improves when the first player starts with ~3
+              compensation points (komi).
+            </p>
+          </div>
+          <div class="mini">
+            <h3>Human strategies</h3>
+            <p>
+              We present strategies that trade complexity for performance,
+              helping humans play well without memorizing everything.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="try">
+        <h2>Perform the ritual alone (Head-to-head play and AI player will be added)</h2>
+        <p class="muted">
+          Each turn starts with 5 dice. Every time you roll a one, that die must be removed for this turn. Get 3
+          ones in a single turn and you will go insane and score no nothing. The goal of the game is reaching 50 points first.
+        </p>
+
+        <div class="demo-panel">
+          <div class="big-roll" id="rollDisplay">—</div>
+
+          <div class="demo-actions">
+            <button class="btn btn-primary" id="rollBtn">Roll</button>
+            <button class="btn" id="bankBtn">Hold & End Turn</button>
+            <button class="btn" id="newTurnBtn">New Turn</button>
+            <button class="btn" id="resetBtn">New game</button>
+          </div>
+
+          <div class="stats" style="grid-template-columns: repeat(4, 1fr)">
+            <div class="stat">
+              <span class="label">Dice left</span>
+              <span class="value" id="diceLeft">5</span>
+            </div>
+            <div class="stat">
+              <span class="label">Ones this turn</span>
+              <span class="value" id="onesCount">0</span>
+            </div>
+            <div class="stat">
+              <span class="label">Turn total</span>
+              <span class="value" id="turnTotal">0</span>
+            </div>
+            <div class="stat">
+              <span class="label">Total score</span>
+              <span class="value" id="bankedScore">0</span>
+            </div>
+          </div>
+
+          <div class="history">
+            <div class="history-head">
+              <span class="muted small" id="statusText">Ready.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Paper -->
+      <section class="card highlight" id="paper">
+        <h2>Research Paper</h2>
+
+        <p>
+          <strong>Title:</strong> Optimal Play of the Great Rolled Ones Game
+        </p>
+
+        <p>
+          <strong>Authors:</strong> Todd W. Neller,
+          <strong>Phong T. Pham</strong>, Quan H. Nguyen, Linh T. Phan, Clifton
+          Presser
+        </p>
+
+        <p>
+          <strong>Abstract:</strong><br />
+          In this paper, we solve and visualize optimal play for the Great
+          Rolled Ones jeopardy dice game by Mitschke and Scheunemann. We share
+          the second player advantage and compute that the first player should
+          start with 3 compensation points (komi) for greatest fairness. We
+          present a spectrum of human-playable strategies that trade off greater
+          play complexity for better performance, and collectively clarify key
+          considerations for excellent play.
+        </p>
+
+        <div class="cta-row">
+          <a
+            class="btn btn-primary"
+            href="https://link.springer.com/chapter/10.1007/978-3-031-54968-7_5"
+            target="_blank"
+            rel="noreferrer"
+            >Read paper</a
+          >
+          <a
+            class="btn"
+            href="https://www.youtube.com/watch?v=uVnApyOfgaY"
+            target="_blank"
+            rel="noreferrer"
+            >Presentation</a
+          >
+          <a
+            class="btn"
+            href="https://cs.gettysburg.edu/~tneller/papers/talks/231012gro.pdf"
+            target="_blank"
+            rel="noreferrer"
+            >Poster/Slides</a
+          >
+        </div>
+      </section>
+    </main>
+    <div id="winOverlay" class="overlay hidden" role="dialog" aria-modal="true">
+      <div class="overlay-card">
+        <img src="../../assets/cthulhu.png" alt="Cthulhu awakens" class="cthulhu" />
+        <h3>The Old One awakens.</h3>
+        <p class="muted">You reached 50+ points.</p>
+        <button class="btn btn-primary" id="overlayNewGameBtn">New game</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
