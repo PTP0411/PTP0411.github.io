@@ -1,10 +1,10 @@
 ---
 layout: archive
 title: "CV"
-permalink: /cv/
+permalink: /cv-json/
 author_profile: false
 redirect_from:
-  - /resume
+  - /resume-json
 ---
 
 {% include base_path %}
@@ -12,6 +12,6 @@ redirect_from:
 {% include cv-template.html %}
 
 <div class="cv-download-links">
-  <a href="{{ base_path }}/files/cv.pdf" class="btn btn--primary">Download CV as PDF</a>
-  <a href="{{ base_path }}" class="btn btn--inverse">View Markdown CV</a>
+  <a href="ptp0411.github.io/files/cv.pdf" class="btn btn--primary">Download CV as PDF</a>
+  <a href="ptp0411.github.io" class="btn btn--inverse">View Markdown CV</a>
 </div>
