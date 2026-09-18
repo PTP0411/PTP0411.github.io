@@ -6,16 +6,25 @@ redirect_from:
   - /about/
   - /about.html
 ---
-======
+
 I am a Research Assistant at [Fulbright University Vietnam](https://fulbright.edu.vn/) under [Prof. Quan Nguyen](https://krisnguyen135.github.io/). I obtained my B.Sc. in Computer Science from [Gettysburg College](https://www.gettysburg.edu/), I was closely advised by [Prof. Todd Neller](https://cs.gettysburg.edu/~tneller/).
 
-I am currently working on active search 
-Recent news
-======
-Sep 2026: I am joining FUV AI Institute as a Research Assistant
+I am currently working on active search for ecology discovery.
 
-June 2026: Presented our paper "FairKalah without Empty Captures" at Computers and Games 2026 conference at University of Maastricht, Netherlands. 
+Outside of academia, I love to be in nature, whether it is a simple run through a park, short hike at a trail nearby or 5 days camping in the wild with my fellow boy scouts.
 
-April 2026: Our paper "FairKalah without Empty Captures" got accepted to the Computers and Games 2026. See you in Netherlands!
+My CV, last updated in September 2026, can be found [here](https://ptp0411.github.io/files/cv.pdf).
 
-Dec 2025: I graduated from Gettysburg College, super grateful for the past 4 years here!
+# Recent news
+
+__Sep 2026__: I am joining FUV AI Institute as a Research Assistant
+
+__June 2026__: Presented our paper "FairKalah without Empty Captures" at Computers and Games 2026 conference at University of Maastricht, Netherlands. 
+
+__April 2026__: Our paper "FairKalah without Empty Captures" got accepted to the Computers and Games 2026. See you in Netherlands!
+
+__Dec 2025__: I graduated from Gettysburg College, super grateful for the past 4 years here!
+
+___
+
+__[Last updated in Sep 2026]__
