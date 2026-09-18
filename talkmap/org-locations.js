@@ -1,22 +1,12 @@
 var addressPoints = [
   [
-    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
-    51.4893335,
-    -0.14405508452768728
+    "Optimal Play of the Great Rolled Ones Game<br />Gettysburg College Computer Science Colloqium; Gettysburg, PA, USA",
+    39.8308973,
+    -77.231012
   ],
   [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
-  ],
-  [
-    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
-    34.0536909,
-    -118.242766
-  ],
-  [
-    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7792588,
-    -122.4193286
+    "FairKalah without Empty Captures<br />Computers and Games 2026; Maastricht, Netherlands",
+    50.8512438,
+    5.6909768
   ]
 ];
