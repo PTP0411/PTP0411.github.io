@@ -21,7 +21,7 @@ __Sep 2026__: I am joining FUV AI Institute as a Research Assistant
 
 __June 2026__: Presented our paper "FairKalah without Empty Captures" at Computers and Games 2026 conference at University of Maastricht, Netherlands. 
 
-__April 2026__: Our paper "FairKalah without Empty Captures" got accepted to the Computers and Games 2026. See you in Netherlands!
+__April 2026__: Our paper "FairKalah without Empty Captures" got accepted to the Computers and Games 2026. See you in the Netherlands!
 
 __Dec 2025__: I graduated from Gettysburg College, super grateful for the past 4 years here!
 
