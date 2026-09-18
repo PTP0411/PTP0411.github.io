@@ -1,10 +1,10 @@
 ---
-title: "Cooking"
+title: "Food I made through the years"
 permalink: /cooking/
 redirect_from: 
   - /food/
 ---
-
+Most of my cooking happened in college dorms.
 <style>
 .food-grid {
   display: grid;
@@ -104,7 +104,7 @@ Tender red wine braised beef with pappardelle and parmesan.
 <img src="https://res.cloudinary.com/hj2wbcyo/image/upload/w_800,q_auto,f_auto/v1789747322/IMG_3644.jpg"
      alt="Risotto"
      loading="lazy">
-<figcaption><strong>Pa</strong><br>
+<figcaption><strong>Risotto with osso bucco</strong><br>
 Tender red wine braised beef shank with creamy risotto.
 </figcaption>
 </figure>
