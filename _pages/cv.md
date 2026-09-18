@@ -15,13 +15,13 @@ Education
 
 Work experience
 ======
-* Aug 2026 - Present: Research Assistant
+* __Aug 2026 - Present: Research Assistant__
   * Fulbright University Vietnam, AI Institute
   * Supervisor: Dr. Quan Nguyen
   * Joined a newly funded, 12-month AI Institute project coupling active search with online representation adaptation to improve rare-species discovery in ecological image collections
   * Support experiments, dataset expansion (including LILA BC), and development of the final end-to-end system, spanning codebase setup, baseline reproduction, representation-adaptation implementation, benchmarking, and manuscript preparation
 
-* Jun 2023 - Feb 2026: Undergraduate Researcher
+* __Jun 2023 - Feb 2026: Undergraduate Researcher__
   * Gettysburg College
   * Supervisor: Dr. Todd Neller
   * Project: Game-Theoretic Analysis and ML Modeling of Fair Starting Positions in Mancala
@@ -34,6 +34,18 @@ Work experience
     * Solved for the exact optimal policy via value iteration, then computed a fair "komi" adjustment, closing a ~10% second-player advantage to within 1%
     * Designed several human-playable policies and quantified each one's win-rate gap over optimal play (5.4% down to 1%)
     * Co-authored paper and presented at the Advances in Computer Games conference (2023)
+
+* __Summer 2025: Intern__
+  * Center for Career Engagement, Gettysburg College
+  * Built a Python integration pipeline automating cross-referencing of contacts between Less Annoying CRM (LACRM) and PeopleGrove, identifying users who completed signup on the institution's PeopleGrove platform
+  * Developed modular scripts for fetching, matching, and syncing records across both systems (LACRM API pagination handling, PeopleGrove export/report automation, JSON-based contact matching by advancedID/database key), consolidated into a single end-to-end orchestration script
+  * Implemented rate-limit handling (HTTP 429 backoff) for PeopleGrove's 50 requests/minute API cap, and designed a fallback CSV-export workflow to bypass rate limits at scale
+  * Automated LACRM custom field updates to reflect PeopleGrove signup status, reducing manual cross-referencing for the Center's staff
+
+* __Summer 2022: Intern__
+  * DIGINET Corporation
+  * Built a JavaScript library converting MSSQL database schemas to MySQL from the ground up, including type mapping across 20+ MSSQL data types (e.g., varbinary, uniqueidentifier, datetimeoffset) with length-dependent branching logic (e.g., varchar → TEXT vs. LONGTEXT by size threshold)
+  * Handled edge cases in reserved-keyword collisions, invalid SQL identifier characters, and semantic translation of MSSQL system defaults (e.g., getdate(), newid()) to MySQL equivalents
 
 
 Publications
