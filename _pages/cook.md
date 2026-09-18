@@ -56,6 +56,24 @@ Beef phở with red wine braised beef ribs.
 </figure>
 
 <figure>
+<img src="https://res.cloudinary.com/hj2wbcyo/image/upload/w_800,q_auto,f_auto/v1789747322/IMG_7447.jpg"
+     alt="Pho ga"
+     loading="lazy">
+<figcaption><strong>Phở gà</strong><br>
+Chicken phở.
+</figcaption>
+</figure>
+
+<figure>
+<img src="https://res.cloudinary.com/hj2wbcyo/image/upload/w_800,q_auto,f_auto/v1789747322/IMG_6998.jpg"
+     alt="Chicken claypot rice"
+     loading="lazy">
+<figcaption><strong>Chicken claypot rice</strong><br>
+Chicken claypot rice.
+</figcaption>
+</figure>
+
+<figure>
 <img src="https://res.cloudinary.com/hj2wbcyo/image/upload/w_800,q_auto,f_auto/v1789747322/IMG_8837.jpg"
      alt="Banh da"
      loading="lazy">
@@ -65,10 +83,28 @@ Fish noodle soup. Fried fish, fish cake and special noodles from the northern re
 </figure>
 
 <figure>
+<img src="https://res.cloudinary.com/hj2wbcyo/image/upload/w_800,q_auto,f_auto/v1789747322/IMG_4064.jpg"
+     alt="Potluck"
+     loading="lazy">
+<figcaption><strong>Vietnamese Tết potluck</strong><br>
+A medley of Vietnamese dishes to celebrate Tết (Lunar New Year).
+</figcaption>
+</figure>
+
+<figure>
+<img src="https://res.cloudinary.com/hj2wbcyo/image/upload/w_800,q_auto,f_auto/v1789747322/10cebcee-4546-47bb-a930-49d0c5e16f06.jpg"
+     alt="Ragout"
+     loading="lazy">
+<figcaption><strong>Pappardelle with ragout</strong><br>
+Tender red wine braised beef with pappardelle and parmesan.
+</figcaption>
+</figure>
+
+<figure>
 <img src="https://res.cloudinary.com/hj2wbcyo/image/upload/w_800,q_auto,f_auto/v1789747322/IMG_3644.jpg"
      alt="Risotto"
      loading="lazy">
-<figcaption><strong>Risotto with Osso Bucco</strong><br>
+<figcaption><strong>Pa</strong><br>
 Tender red wine braised beef shank with creamy risotto.
 </figcaption>
 </figure>
