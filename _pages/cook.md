@@ -186,7 +186,16 @@ Shrimp etouffee with rice.
      alt="Galbitang"
      loading="lazy">
 <figcaption><strong>Galbitang</strong><br>
-Korean beef ribs stew with radish..
+Korean beef ribs stew with radish.
+</figcaption>
+</figure>
+
+<figure>
+<img src="https://res.cloudinary.com/hj2wbcyo/image/upload/w_800,q_auto,f_auto/v1789747322/IMG_6887.jpg"
+     alt="Jjigae"
+     loading="lazy">
+<figcaption><strong>Soondubu-jjigae and gyudon(?)</strong><br>
+Korean tofu soup with Japanese beef and onion. Served with rice.
 </figcaption>
 </figure>
 
